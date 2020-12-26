@@ -561,7 +561,7 @@ h2 {
   width: 200px;
   height: 50px;
   padding-bottom: 150px;
-  margin: 150px 50px;
+  margin: 150px 20px;
   display: inline-block;
   position: relative;
   z-index: 2;
@@ -634,17 +634,16 @@ h2 {
 /* ---------- BADGE ----------*/
 /* ---------------------------*/
 .badge {
-  box-sizing: border-box;
-  display: inline-block;
   background-color: #333;
   color: #f1f1f1;
 
-  border-radius: 3rem;
+  border-radius: 10px;
   text-align: center;
 
   font-size: 1rem;
   font-weight: 400;
-  padding: 0.05rem 0.8rem 0.1rem;
+  padding: 3px 1rem;
+  margin: 3px ;
   line-height: inherit;
 }
 
@@ -672,118 +671,98 @@ h2 {
   flex-flow: column;
   place-items: center;
 }
+.box-timeline {
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
+  margin-bottom: 100px;
+}
 
-/* .titre-travail-exp {
-  text-align: center;
-  margin: 70px 0;
-  font-size: 40px;
-  color: #f1f1f1;
-} */
-.cont-exp-travail {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  max-width: 1024;
-}
-.barre-verticale {
+.ligne {
   height: 1000px;
-  width: 5px;
+  width: 8px;
+  margin: 0 auto;
   background: #f1f1f1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  left: -10px;
 }
-.boule-ico {
-  width: 50px;
-  height: 50px;
+
+.rond-exp {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  border: 1px solid #333;
-  background: #f1f1f1;
+  background: #333;
+  position: absolute;
+  border: 2px solid #f1f1f1;
+  left: 50%;
+  transform: translate(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 40px;
+  margin: 0;
 }
-.boule-ico img {
-  width: 25px;
+.rond-exp img {
+  width: 40px;
+  height: 40px;
 }
 
-.flex-cont-bloc-exp {
-  width: 800px;
-  flex-shrink: 1;
-  height: 1000px;
-  position: relative;
-}
-.bloc {
-  width: 100%;
-  height: 200px;
-  margin-bottom: 37.5px;
-  margin-left: 20px;
-  cursor: pointer;
-  border: 1px solid #333;
-  position: relative;
-}
-.contenu-bloc {
+.r1{top: 80px;}
+.r2{top: 386px;}
+.r3{top: 692px;}
+.r4{top: 1000px;}
+
+.box {
+  color: #333;
+  width: 400px;
+  min-height: 200px;
   padding: 20px;
-  width: 100%;
-  height: 100%;
-  border: 2px solid black;
-  background: white;
-  transition: transform 0.25s ease-in-out;
-  position: relative;
-  transform: translate(10px, -10px);
-}
-.contenu-bloc:hover {
-  transform: translate(0, 0);
-}
-.bloc1 {
-  background: #fb97a0;
-}
-.bloc2 {
-  background: #bfe2ca;
-}
-.bloc3 {
-  background: #a6daef;
-}
-.bloc4 {
-  background: #d0e2ec;
-}
-.titre-section-bloc {
-  font-family: "Abril Fatface", sans-serif;
-  font-size: 25px;
-  padding-bottom: 10px;
+  border-radius: 3px;
+  height: auto;
+  background: #f1f1f1;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
-/* Media section travail exp */
-
-@media screen and (max-width: 700px) {
-  .barre-verticale {
-    height: 1200px;
-  }
-  .bloc {
-    height: 250px;
-    margin-bottom: 37.5px;
-  }
-  .barre-verticale {
-    margin-left: 60px;
-  }
-  .flex-cont-bloc-exp {
-    margin-right: 30px;
-  }
+.b1 {
+  top: 80px;
+  left: calc(50% - 270px);
+}
+.b2 {
+  top: 386px;
+  left: calc(50% + 270px);
+}
+.b3 {
+  top: 692px;
+  left: calc(50% - 270px);
+}
+.b4 {
+  top: 1000px;
+  left: calc(50% + 270px);
 }
 
-@media screen and (max-width: 425px) {
-  .txt-section {
-    font-size: 16px;
+.box h3{
+  margin-bottom: 10px;
+}
+.box div{
+  display: flex;
+  flex-flow: wrap;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .ligne {
+      position: relative;
+      left: 200px;
   }
-  .bloc {
-    height: 400px;
+  .rond-exp {
+      left: calc(50% + 200px);
   }
-  .barre-verticale {
-    height: 1800px;
+  .box {
+      left: calc(50% - 50px)
   }
+
 }
 
 /* Section Contact */
@@ -793,14 +772,6 @@ h2 {
   flex-flow: column;
   place-items: center;
 }
-/* .section-contact h2 {
-  text-align: center;
-  color: #f1f1f1;
-  font-size: 48px;
-  font-weight: 400;
-  margin-bottom: 50px;
-  padding: 70px 0 0 0;
-} */
 .section-contact h2 strong {
   font-weight: 900;
 }
@@ -812,7 +783,6 @@ h2 {
   border: 2px dashed #f1f1f1;
   margin: 15px;
 }
-
 .container-form {
   margin: 100px auto;
   padding: 50px;

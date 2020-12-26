@@ -3,24 +3,6 @@ const nav = document.querySelector(".nav-gauche");
 const allItemNav = document.querySelectorAll(".nav-menu-item");
 const ligne = document.querySelector(".cont-ligne");
 
-// btnMenu.addEventListener('click', () => {
-
-//     ligne.classList.toggle('active')
-//     nav.classList.toggle('menu-visible')
-
-// })
-
-// if(window.matchMedia('(max-width: 1300px)')) {
-
-//     allItemNav.forEach(item => {
-//         item.addEventListener('click', () => {
-//             nav.classList.toggle('menu-visible')
-//             ligne.classList.toggle('active');
-//         })
-//     })
-
-// }
-
 // Animation écriture
 
 const txtAnim = document.querySelector(".txt-animation");
@@ -93,7 +75,6 @@ const scene = new ScrollMagic.Scene({
   reverse: false,
 })
   .setTween(tlpres)
-  // .addIndicators()
   .addTo(controller);
 
 // Anim portfolio
@@ -114,42 +95,8 @@ const scene2 = new ScrollMagic.Scene({
   reverse: false,
 })
   .setTween(tlPortfolio)
-  // .addIndicators()
   .addTo(controller);
 
-// // Vague 2
-
-// const itemPortfolio2 = document.querySelectorAll(".vague2");
-
-// const tlPortfolio2 = new TimelineMax();
-
-// tlPortfolio2.staggerFrom(itemPortfolio2, 1, { opacity: 0 }, 0.2, "-=0.5");
-
-// const scene3 = new ScrollMagic.Scene({
-//   triggerElement: itemPortfolio,
-//   triggerHook: 0.2,
-//   reverse: false,
-// })
-//   .setTween(tlPortfolio2)
-//   // .addIndicators()
-//   .addTo(controller);
-
-// // Vague 3
-
-// const itemPortfolio3 = document.querySelectorAll(".vague3");
-
-// const tlPortfolio3 = new TimelineMax();
-
-// tlPortfolio3.staggerFrom(itemPortfolio3, 1, { opacity: 0 }, 0.2, "-=0.5");
-
-// const scene4 = new ScrollMagic.Scene({
-//   triggerElement: itemPortfolio2,
-//   triggerHook: 0.2,
-//   reverse: false,
-// })
-//   .setTween(tlPortfolio3)
-//   // .addIndicators()
-//   .addTo(controller);
 
 // Animation Panneau
 const allBlocs = document.querySelectorAll(".panneau");
@@ -165,4 +112,24 @@ allBlocs.forEach((bloc) => {
       }
     }
   });
+});
+const allRonds = document.querySelectorAll(".rond-exp");
+const allBoxes = document.querySelectorAll(".box");
+
+
+allBoxes.forEach((box) => {
+  for (i = 0; i < allRonds.length; i++) {
+    if (
+      allRonds[i].getAttribute("data-anim") === box.getAttribute("data-anim")
+    ) {
+      let tween = gsap.from(box, { y: -50, opacity: 0, duration: 0.5 });
+
+      let scene = new ScrollMagic.Scene({
+        triggerElement: allRonds[i],
+        reverse: true,
+      })
+        .setTween(tween)
+        .addTo(controller);
+    }
+  }
 });
