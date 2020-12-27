@@ -1,8 +1,3 @@
-const btnMenu = document.querySelector(".btn-rond-menu");
-const nav = document.querySelector(".nav-gauche");
-const allItemNav = document.querySelectorAll(".nav-menu-item");
-const ligne = document.querySelector(".cont-ligne");
-
 // Animation écriture
 
 const txtAnim = document.querySelector(".txt-animation");
@@ -57,14 +52,14 @@ for (let i = 0; i < input_fields.length; i++) {
 
 const presentationContainer = document.querySelector(".presentation");
 const titrePres = document.querySelector(".titre-pres");
-const presGauche = document.querySelector(".pres-gauche");
+const presTxt = document.querySelector(".pres-txt");
 const listePres = document.querySelectorAll(".item-liste");
 
 const tlpres = new TimelineMax();
 
 tlpres
   .from(titrePres, { y: -200, opacity: 0, duration: 0.6 })
-  .from(presGauche, { y: -20, opacity: 0, duration: 0.6 }, "-=0.5")
+  .from(presTxt, { y: -20, opacity: 0, duration: 0.6 }, "-=0.5")
   .staggerFrom(listePres, 1, { opacity: 0 }, 0.2, "-=0.5");
 
 const controller = new ScrollMagic.Controller();
