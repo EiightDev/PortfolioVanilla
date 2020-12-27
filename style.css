@@ -281,11 +281,14 @@ h2 {
     padding: 20px 5px;
     margin: 0;
   }
+  .btn-acc-container {
+    flex-flow: column;
+  }
   .btn-acc {
     width: 100px;
     font-size: 13px;
     height: 35px;
-    margin: 0 10px;
+    margin: 5px 0;
   }
   .media {
     width: 50px;
@@ -375,8 +378,8 @@ h2 {
 
 @media screen and (max-width: 700px) {
   .container-pres {
-    margin-top: 10px;
-    margin-bottom: 70px;
+    margin: 0;
+    padding: 0 10px;
   }
   .divider-pres {
     display: none;
@@ -394,9 +397,8 @@ h2 {
   }
 }
 @media screen and (max-width: 450px) {
-  .container-pres {
-    margin-top: 10px;
-    margin-bottom: 70px;
+  .presentation {
+    min-height: auto;
   }
 
   .pres-txt p {
