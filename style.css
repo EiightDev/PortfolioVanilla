@@ -744,6 +744,9 @@ h2 {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }
 
 .b1 {
