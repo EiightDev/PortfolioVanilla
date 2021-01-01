@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -43,7 +44,7 @@
             </div>
 
             <a href="#pres" class="btn-rond">
-                    <img src="ressources/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc">
+                <img src="ressources/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc">
             </a>
         </div>
         <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -73,10 +74,10 @@
 
     <!-- Section Présentation -->
 
-    <section class="presentation" id="pres" refs='sr_one'>
+    <section class="presentation" id="pres">
 
 
-        <h2>Présentation</h2>
+        <h2 class="titre-pres">Présentation</h2>
         <div class="container-pres">
 
             <div class="pres-txt">
@@ -89,7 +90,7 @@
                 <br />
                 <p>
                     Fort de mes expériences, j'allie adaptabilité et abnégation afin de toujours être force de
-                    proposition dasn toute situation.
+                    propositions dans toute situation.
                     L'écoute et le travail en équipe sont les pierres angulaires de mon apprentissage constant.
                 </p>
                 <br />
@@ -99,28 +100,23 @@
             </div>
 
             <div class="pres-list">
-                <ul class="liste-presentation">
-                    <li class="item-liste i1">
-                        <span class="chiffre-style">1. </span>
-                        <p class="txt-liste">Développeur Front-End</p>
-                    </li>
-                    <li class="item-liste i2">
-                        <span class="chiffre-style">2. </span>
-                        <p class="txt-liste">Développeur Back-end</p>
-                    </li>
-                    <li class="item-liste i3">
-                        <span class="chiffre-style">3. </span>
-                        <p class="txt-liste">UI / UX Designer</p>
-                    </li>
-                    <li class="item-liste i4">
-                        <span class="chiffre-style">4. </span>
-                        <p class="txt-liste">Entrepreneur</p>
-                    </li>
-                    <li class="item-liste i5">
-                        <span class="chiffre-style">5. </span>
-                        <p class="txt-liste">Chef de Projet</p>
-                    </li>
-                </ul>
+                <div class="item-list">
+                    <img src="./ressources/front.svg" alt="image d'ordinateur" />
+                    <p>Développeur FrontEnd</p>
+                </div>
+                <div class="item-list">
+                    <img src="./ressources/back.svg" alt="image d'ordinateur" />
+                    <p>Développeur BackEnd</p>
+                </div>
+                <div class="item-list">
+                    <img src="./ressources/ui-ux.svg" alt="image de fiche" />
+                    <p>UI / UX Designer</p>
+                </div>
+                <div class="item-list">
+                    <img src="./ressources/projectChief.svg" alt="image de" />
+                    <p>Chef de Projet</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -265,90 +261,76 @@
 
     <section class="section-skill" id="skill">
         <div class="divider"></div>
-        <h2>Mes compétences techniques</h2>
+        <h2 class="titre-skill">Mes compétences techniques</h2>
         <div class="skill-container">
 
-            <div class="icon-container fa fa-3x fa-bars">
-                <h3>Front-End</h3>
-                <div class="icon-container-item item-0">
-                    <img src="./ressources/sass.svg"></img>
+            <h3>Front-End</h3>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <img src="./ressources/html.svg" alt="logo html" />
+                    <p>HTML</p>
                 </div>
-                <div class="icon-container-item item-1">
-                    <img src="./ressources/html.svg"></img>
+                <div class="skill-item">
+                    <img src="./ressources/css.svg" alt="logo css" />
+                    <p>CSS</p>
                 </div>
-                <div class="icon-container-item item-2">
-                    <img src="./ressources/css.svg"></img>
+                <div class="skill-item">
+                    <img src="./ressources/javascript.svg" alt="logo javascript" />
+                    <p>JavaScript</p>
                 </div>
-                <div class="icon-container-item item-3">
-                    <img src="./ressources/html.svg"></img>
+                <div class="skill-item">
+                    <img src="./ressources/react.svg" alt="logo de react" />
+                    <p>ReactJS</p>
                 </div>
-                <div class="icon-container-item item-4">
-                    <img src="./ressources/javascript.svg"></img>
-                </div>
-                <div class="icon-container-item item-5">
-                    <img src="./ressources/react.svg"></img>
-                </div>
-                <div class="icon-container-item item-6">
-                    <img src="./ressources/vue.svg"></img>
-                </div>
-                <div class="icon-container-item item-7">
-                    <img src="./ressources/typescript.svg"></img>
+                <div class="skill-item">
+                    <img src="./ressources/sass.svg" alt="logo de sass" />
+                    <p>Sass</p>
                 </div>
             </div>
-            <div class="icon-container fa fa-3x fa-bars">
-                <h3>Outils et Environements</h3>
-                <div class="icon-container-item item-0">
-                    <img src="./ressources/windows.svg"></img>
+            <h3>Back-End</h3>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <img src="./ressources/python.svg" alt="logo html" />
+                    <p>Python</p>
                 </div>
-                <div class="icon-container-item item-1">
-                    <img src="./ressources/git.svg"></img>
+                <div class="skill-item">
+                    <img src="./ressources/django.svg" alt="logo django" />
+                    <p>Django</p>
                 </div>
-                <div class="icon-container-item item-2">
-                    <img src="./ressources/linux.svg"></img>
+                <div class="skill-item">
+                    <img src="./ressources/node.svg" alt="logo nodejs" />
+                    <p>NodeJS</p>
                 </div>
-                <div class="icon-container-item item-3">
-                    <img src="./ressources/github.svg"></img>
+                <div class="skill-item">
+                    <img src="./ressources/mysql.svg" alt="logo de mysql" />
+                    <p>MySQL</p>
                 </div>
-                <div class="icon-container-item item-4">
-                    <img src="./ressources/postman.svg"></img>
-                </div>
-                <div class="icon-container-item item-5">
-                    <img src="./ressources/html.svg"></img>
-                </div>
-                <div class="icon-container-item item-6">
-                    <img src="./ressources/vscode.svg"></img>
-                </div>
-                <div class="icon-container-item item-7">
-                    <img src="./ressources/html.svg"></img>
+                <div class="skill-item">
+                    <img src="./ressources/mongodb.svg" alt="logo de mongodb" />
+                    <p>MongoDB</p>
                 </div>
             </div>
-            <div class="icon-container fa fa-3x fa-bars">
-                <h3>Back-End</h3>
-                <div class="icon-container-item item-0">
-                    <img src="./ressources/html.svg"></img>
+            <h3>Outiles et Environements</h3>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <img src="./ressources/vscode.svg" alt="logo vscode" />
+                    <p>VSCode</p>
                 </div>
-                <div class="icon-container-item item-1">
-                    <img src="./ressources/python.svg"></img>
+                <div class="skill-item">
+                    <img src="./ressources/windows.svg" alt="logo windows" />
+                    <p>Windows</p>
                 </div>
-                <div class="icon-container-item item-2">
-                    <img src="./ressources/django.svg"></img>
+
+                <div class="skill-item">
+                    <img src="./ressources/linux.svg" alt="logo de linux" />
+                    <p>Linux</p>
                 </div>
-                <div class="icon-container-item item-3">
-                    <img src="./ressources/mysql.svg"></img>
-                </div>
-                <div class="icon-container-item item-4">
-                    <img src="./ressources/node.svg"></img>
-                </div>
-                <div class="icon-container-item item-5">
-                    <img src="./ressources/mongodb.svg"></img>
-                </div>
-                <div class="icon-container-item item-6">
-                    <img src="./ressources/html.svg"></img>
-                </div>
-                <div class="icon-container-item item-7">
-                    <img src="./ressources/html.svg"></img>
+                <div class="skill-item">
+                    <img src="./ressources/git.svg" alt="logo de git" />
+                    <p>Git</p>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -369,7 +351,7 @@
 
             <div class="box b1" data-anim="1">
                 <h3>Developpeur Web -- 2020</h3>
-                <p>En cours de reconversion, développant mes stacks et connaissances techniques.  </p>
+                <p>En cours de reconversion, développant mes stacks et connaissances techniques. </p>
                 <div>
                     <span class="badge">Curiosité</span>
                     <span class="badge">Analyse</span>
