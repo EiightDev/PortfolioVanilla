@@ -376,44 +376,34 @@ h2 {
   transform: scale(1.1);
 }
 
-/* .liste-presentation {
-  list-style-type: none;
-  padding: 100px 0;
-}
-.chiffre-style {
-  font-family: "Abril Fatface", sans-serif;
-  font-size: 40px;
-}
-.txt-liste {
-  font-size: 27px;
-  display: inline;
-}
-.txt-section {
-  line-height: 25px;
-  padding: 0 0 0 15px;
-} */
-
 /* ----------------Medias Presentation -------------------*/
 
 @media screen and (max-width: 700px) {
   .container-pres {
     margin: 0;
     padding: 0 10px;
+    align-items: center;
   }
   .divider-pres {
     display: none;
   }
-
   .pres-txt h3 {
     font-size: 20px;
   }
-  /* .chiffre-style {
-    font-size: 30px;
+  .pres-list {
+    height: 450px;
+    width: 500px;
+    margin: 15px;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content:space-around;
+   
   }
-  .txt-section {
-    line-height: 20px;
-    font-size: 17px;
-  } */
+  .item-list {
+    
+    width: 200px;
+    
+  }
 }
 @media screen and (max-width: 450px) {
   .presentation {
@@ -426,12 +416,20 @@ h2 {
   .pres-txt p {
     font-size: 17px;
   }
-  /* .txt-liste {
-    font-size: 20px;
+  .pres-list {
+    height: 350px;
+    width: 100vw;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
   }
-  .chiffre-style {
-    font-size: 20px;
-  } */
+  .item-list {
+    min-height: unset;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+
+  }
 }
 
 /* ------------------ Section Portfolio --------------------- */
@@ -600,22 +598,25 @@ h2 {
   display: flex;
   flex-flow: column;
   max-width: 1024px;
+  align-items: center;
   text-align: center;
   padding: 30px 0 0 0;
 }
 .skill-container h3 {
   font-size: 25px;
+  min-width: 200px;
+  width: 50%;
   background: #000;
   padding: 5px 0px;
   border-radius: 5px;
 }
 .skill-list {
   height: 300px;
+  max-width: 1024px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  overflow: hidden;
 }
 .skill-item {
   display: flex;
@@ -624,8 +625,9 @@ h2 {
   align-items: center;
   color: #333;
   height: 150px;
-  width: 18%;
+  width: 150px;
   padding: 30px;
+  margin: 0 5px;
   border-radius: 3px;
   background: #f1f1f1;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
@@ -644,10 +646,27 @@ h2 {
 
 /* Medias Skill */
 
-@media screen and (max-width: 700px) {
-  .skill-container {
-    flex-flow: column;
-    margin: 20px 0;
+@media screen and (max-width: 800px) {
+  .skill-list {
+    height: 300px;
+    width: 400px;
+    overflow-x: scroll;
+  }
+  .skill-list::-webkit-scrollbar {
+    display: block;
+  }
+  .skill-item {
+    height: 150px;
+    width: 150px;
+  }
+  .skill-item img{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: -50px;
+  }
+  .skill-item:hover {
+    transform: scale(1.1);
   }
 }
 
