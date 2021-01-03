@@ -402,13 +402,10 @@ h2 {
     margin: 15px;
     flex-flow: wrap;
     align-items: center;
-    justify-content:space-around;
-   
+    justify-content: space-around;
   }
   .item-list {
-    
     width: 200px;
-    
   }
 }
 @media screen and (max-width: 450px) {
@@ -416,7 +413,7 @@ h2 {
     min-height: auto;
   }
 
-  .pres-txt  {
+  .pres-txt {
     width: 90vw;
   }
   .pres-txt p {
@@ -434,7 +431,6 @@ h2 {
     height: 150px;
     width: 150px;
     margin: 5px;
-
   }
 }
 
@@ -525,7 +521,7 @@ h2 {
 .infos {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 0 30px ;
+  margin: 0 30px;
   display: flex;
   flex-flow: column;
   place-items: center;
@@ -559,7 +555,6 @@ h2 {
   pointer-events: none;
   background-color: #cc3300;
 }
-
 
 @media screen and (max-width: 700px) {
   .container-portfolio {
@@ -645,7 +640,7 @@ h2 {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
   transition: 0.2s ease-in-out;
 }
-.skill-item img{
+.skill-item img {
   height: 100px;
   width: 100px;
   position: relative;
@@ -654,7 +649,6 @@ h2 {
 .skill-item:hover {
   transform: scale(1.1);
 }
-
 
 /* Medias Skill */
 
@@ -665,13 +659,26 @@ h2 {
     width: 80vw;
     overflow-x: scroll;
     border: 1px solid #333;
-    mask-image: linear-gradient(to right, transparent, black 20px, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 15px,
+      black 90%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 15px,
+      black 90%,
+      transparent
+    );
   }
   .skill-item {
     height: 150px;
     width: 150px;
   }
-  .skill-item img{
+  .skill-item img {
     height: 100px;
     width: 100px;
     position: relative;
@@ -877,7 +884,9 @@ h2 {
   width: 66%;
   max-width: 660px;
   border: 1px solid black;
-  border-radius: 3px;background: #f1f1f1;box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  background: #f1f1f1;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 .form-groupe {
