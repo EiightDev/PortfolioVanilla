@@ -268,6 +268,11 @@ h2 {
   .accueil {
     justify-content: flex-start;
   }
+  .container-accueil {
+    padding: 20px 0 0 0;
+    height: 90vh;
+    justify-content: space-between;
+  }
   .cercle-portrait {
     width: 150px;
     height: 150px;
@@ -337,6 +342,7 @@ h2 {
   justify-content: flex-end;
   padding: 100px 20px 0 20px;
 }
+
 .pres-txt h3 {
   text-align: center;
   font-size: 30px;
@@ -410,8 +416,8 @@ h2 {
     min-height: auto;
   }
 
-  .pres-txt p {
-    font-size: 17px;
+  .pres-txt  {
+    width: 90vw;
   }
   .pres-txt p {
     font-size: 17px;
@@ -540,6 +546,7 @@ h2 {
   justify-content: space-around;
 }
 .infos div a {
+  pointer-events: auto;
   padding: 10px 20px;
   width: 140px;
   margin: 0 2px;
@@ -548,6 +555,11 @@ h2 {
   color: #f1f1f1;
   text-align: center;
 }
+.indisponible {
+  pointer-events: none;
+  background-color: #cc3300;
+}
+
 
 @media screen and (max-width: 700px) {
   .container-portfolio {
@@ -648,12 +660,12 @@ h2 {
 
 @media screen and (max-width: 800px) {
   .skill-list {
-    height: 300px;
-    width: 400px;
+    justify-content: space-between;
+    height: 250px;
+    width: 80vw;
     overflow-x: scroll;
-  }
-  .skill-list::-webkit-scrollbar {
-    display: block;
+    border: 1px solid #333;
+    mask-image: linear-gradient(to right, transparent, black 20px, black 90%, transparent);
   }
   .skill-item {
     height: 150px;
@@ -957,7 +969,7 @@ textarea:focus {
 
 @media screen and (max-width: 450px) {
   .container-form {
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
 }
 

@@ -32,7 +32,6 @@ typewriter
   .typeString("<strong style='color: black;'> Full-Stack</strong> !")
   .start();
 
-
 // Animation ScrollMagic GSAP presentation
 
 const presentationContainer = document.querySelector(".presentation");
@@ -56,7 +55,6 @@ const scene = new ScrollMagic.Scene({
 })
   .setTween(tlpres)
   .addTo(controller);
-
 
 // Anim portfolio
 
@@ -96,12 +94,6 @@ const scene2 = new ScrollMagic.Scene({
 //   .setTween(tlSkill)
 //   .addTo(controller);
 
-
-
-
-
-
-
 // Animation Panneau
 const allBlocs = document.querySelectorAll(".panneau");
 
@@ -116,6 +108,15 @@ allBlocs.forEach((bloc) => {
     }
   });
 });
+
+const allLinks = document.querySelectorAll(".sp");
+
+allLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+});
+
 const allRonds = document.querySelectorAll(".rond-exp");
 const allBoxes = document.querySelectorAll(".box");
 
@@ -135,11 +136,6 @@ allBoxes.forEach((box) => {
     }
   }
 });
-
-
-
-
-
 
 // Animation Contact pour les labels
 
