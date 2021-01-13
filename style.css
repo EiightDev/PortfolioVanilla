@@ -58,8 +58,11 @@ h2 {
 /* ------------------ Accueil ---------------- */
 
 .accueil {
-  background: linear-gradient(to top, #333, #333, #f1f1f1);
-  width: 100vw;
+  background-image: url(ressources/accueil.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
@@ -85,7 +88,7 @@ h2 {
   width: 200px;
 }
 .txt-animation {
-  color: #f1f1f1;
+  color: #333;
   font-family: "Abril Fatface", sans-serif;
   padding: 50px 0 50px 0;
   font-size: 40px;
@@ -109,7 +112,7 @@ h2 {
   font-size: 18px;
   min-width: 100px;
   background: linear-gradient(225deg, #2e2e2e, #373737);
-  box-shadow: -20px 20px 60px #2b2b2b, 20px -20px 60px #3b3b3b;
+  box-shadow: -10px 10px 15px #333
 }
 
 .btn-acc:hover {
@@ -626,9 +629,8 @@ h2 {
   align-items: center;
   text-align: center;
   border-radius: 25px;
-background: linear-gradient(225deg, #2e2e2e, #373737);
-box-shadow:  -20px 20px 60px #2b2b2b,
-             20px -20px 60px #3b3b3b;
+  background: linear-gradient(225deg, #2e2e2e, #373737);
+  box-shadow: -20px 20px 60px #2b2b2b, 20px -20px 60px #3b3b3b;
 }
 .skill-item {
   display: flex;
@@ -664,7 +666,6 @@ box-shadow:  -20px 20px 60px #2b2b2b,
     width: calc(100vw - 20px);
     overflow-x: scroll;
     border: 1px dashed #f1f1f1;
-    
   }
   .skill-item {
     height: 150px;
